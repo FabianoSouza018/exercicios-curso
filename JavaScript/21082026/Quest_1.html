@@ -1,0 +1,24 @@
+<script>
+
+    const numero = Number(prompt("Digite um numero para verificar si PAR/IMPAR.:   ").trim());
+
+    let resultado;
+
+    if (numero % 2 === 0) {
+        resultado = "Par"
+    } else {
+        resultado = "Impar"
+    }
+
+    alert(`Numero: ${numero} e ${resultado}`);
+
+/* Usando operador ternário
+
+const numero = Number(prompt("Digite um numero para verificar se PAR/IMPAR.:   ").trim());
+const resultado = (numero % 2 === 0) ? "Par" : "Ímpar";
+
+alert(`Número: ${numero} é ${resultado}`);
+
+*/
+    
+</script>

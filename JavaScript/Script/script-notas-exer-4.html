@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+</head>
+<body>
+
+    <p> Calculo do Boletim </p>
+
+    <p> Nota da Primeira avaliação </p>
+    <p id="nota_1"></p>
+
+    <p> Nota da Segunda avaliação </p>
+    <p id="nota_2"></p>
+
+    <p> Media Geral </p>
+    <p id="media"></p>
+
+    <script>
+        const nota_1 = Number(prompt("Digite Primeira nota.: "));
+        const nota_2 = Number(prompt("Digite Segunda nota.: "));
+        const soma = nota_1 + nota_2;
+        const media = soma / 2
+        alert("Media notas.: " + media);
+
+        document.getElementById("nota_1").innerHTML = nota_1;
+        document.getElementById("nota_2").innerHTML = nota_2;
+        document.getElementById("media").innerHTML = media;
+
+    </script>
+    
+</body>
+</html>

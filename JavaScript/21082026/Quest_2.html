@@ -1,0 +1,20 @@
+<script>
+
+    const vel_max = Number(prompt("Velocidade Maxima Permitida: ").trim());
+    const vel_cond = Number(prompt("Velocidade do Condutor.: ").trim());
+
+        let vel_ate20Pct;
+        let vel_sup20Pct;
+
+        vel_ate20Pct = vel_max * 1.20;  // 20% maior que a permitida
+
+    if (vel_cond <= vel_max) {
+        alert(`Velocidade: ${vel_cond} Km/h Sem Multa`);
+    } else if(vel_cond <= vel_ate20Pct) {
+        alert(`Velocidade: ${vel_cond} Km/h Multa Leve`);
+    } else {
+        alert(`Velocidade: ${vel_cond} Km/h Multa Grave`);
+    }
+
+   </script>
+

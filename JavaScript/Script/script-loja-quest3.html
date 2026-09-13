@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão-3</title>
+</head>
+<body>
+    <p> Loja até R$ 50,00 </p>
+
+     <p>Valor total.: (R$) </p>
+     <p id="preco"></p>
+
+     <p>Pagamento à vista.: (R$) </p>
+     <p id="Avista"></p>
+
+     <p> Parcelamento em 3x (R$) </p>
+     <p id="parcelamento"></p>
+
+    <script>
+        const preco = prompt("Digite valor total da compra.: ");
+        const pagamentoAvista = preco * 0.1
+        const desconto = pagamentoAvista
+        const Avista = preco - desconto
+        const parcelamento = preco / 3
+
+        document.getElementById("preco").innerHTML = preco;
+        document.getElementById("Avista").innerHTML = Avista;
+        document.getElementById("parcelamento").innerHTML = parcelamento;
+
+        alert("Pagamento a vista.: " + Avista) 
+        alert("Pagamento parcelado.: "  + parcelamento)
+    </script>
+</body>
+</html>

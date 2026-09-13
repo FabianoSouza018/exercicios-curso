@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+</head>
+<body>
+
+    <p> Numero digitado </p>
+    <p id="numero"></p>
+
+    <p> Numero Anterior </p>
+    <p id="anterior"></p>
+
+    <p> Numero posterior </p>
+    <p id="posterior"></p>
+
+
+
+    <script>
+
+        const numero = Number(prompt("Digite um numero"));
+        const anterior = numero - 1
+        const posterior = numero + 1
+
+        document.getElementById("numero").innerHTML = numero;
+        document.getElementById("anterior").innerHTML = anterior;
+        document.getElementById("posterior").innerHTML = posterior;
+
+
+    </script>
+    
+</body>
+</html>

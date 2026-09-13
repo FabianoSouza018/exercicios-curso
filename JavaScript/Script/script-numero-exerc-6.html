@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+<body>
+
+<p>Primeiro numero digitado</p>
+<p id="primeiroNum"></p>
+
+<p>Primeiro numero digitado</p>
+<p id="segundoNum"></p>
+
+<p>Total soma</p>
+<p id="soma"></p>
+
+<script>
+
+    const primeiroNum = Number(prompt("Digite o primeiro numero"))
+    const segundoNum = Number(prompt("Digite o segundo numero"))
+    const soma = primeiroNum + segundoNum
+
+    document.getElementById("primeiroNum").innerHTML = primeiroNum;
+    document.getElementById("segundoNum").innerHTML = segundoNum;
+    document.getElementById("soma").innerHTML = soma;
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+</head>
+<body>
+
+    <p>Restaurante Amanhecer</p>
+
+    <p>Valor do Jantar</p>
+    <p id="valorJantar"></p>
+    
+    <p>Taxa do Garçom (10%):</p>
+    <p id="taxaGarcom"></p>
+
+    <p>Total a pagar:</p>
+    <p id="totalPagar"></p>
+
+    <script>
+        const valorJantar = Number(prompt("Digite valor do jantar (R$):"));
+        const taxaGarcom = valorJantar * 0.1;
+        const totalPagar = taxaGarcom + valorJantar;
+
+        const formatadorBRL = new Intl.NumberFormat('pt-BR', {
+            style: 'currency',
+            currency: 'BRL'
+        });
+
+        document.getElementById("valorJantar").innerHTML = formatadorBRL.format(valorJantar);
+        document.getElementById("taxaGarcom").innerHTML = formatadorBRL.format(taxaGarcom);
+        document.getElementById("totalPagar").innerHTML = formatadorBRL.format(totalPagar);
+    </script>
+</body>
+</html>

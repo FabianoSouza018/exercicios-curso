@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+<body>
+
+    <p>Pizzaria à melhor noite. </p>
+
+    <p>Valor Total (R$) </p>
+    <p id="valorTotal"></p>
+
+    <p>Quantidade de clientes</p>
+    <p id="quantCliente"></p>
+
+    <p>Total individual</p>
+    <p id="individual"></p>
+
+    <script>
+       const valorTotal = prompt("Valor total: ");
+       const quantCliente = prompt ("Total de Cliente.: ");
+       const individual = valorTotal / quantCliente
+
+        document.getElementById("valorTotal").innerHTML = valorTotal;
+        document.getElementById("quantCliente").innerHTML = quantCliente;
+        document.getElementById("individual").innerHTML = individual;
+
+       alert("Valor individual por cliente.: " + individual)
+    </script>
+    
+</body>
+</html>

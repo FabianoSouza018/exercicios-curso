@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <form class="p-3">
+        <!-- Campo de texto (Nome) com classe form-control e simulação is-valid -->
+        <p>
+            <label for="inNome" class="form-label">Nome: </label>
+            <input type="text" id="inNome" class="form-control is-valid" required autofocus>
+        </p>
+
+        <!-- Campo de E-mail dentro de rótulo flutuante (form-floating) e simulação is-invalid -->
+        <p class="form-floating">
+            <input type="email" id="inEmail" class="form-control is-invalid" placeholder="nome@exemplo.com" required>
+            <label for="inEmail">Email: </label>
+        </p>
+
+        <!-- Caixa de seleção de estado com classe form-select -->
+        <p>
+            <label for="inEstado" class="form-label">Estado: </label>
+            <select id="inEstado" class="form-select">
+                <option selected disabled>Escolha...</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </select>
+        </p>
+    </form>
+
+</body>
+
+</html>
